@@ -1,0 +1,168 @@
+```html
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mənim Saytım</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #10131f;
+            color: white;
+        }
+
+        header {
+            background: #1a1f35;
+            padding: 22px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #65d6ff;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+            background: #252b45;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+        }
+
+        .hero p {
+            color: #c6c9d6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #65d6ff;
+            color: #10131f;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background: #1a1f35;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card h3,
+        .card p {
+            padding: 0 15px;
+        }
+
+        .card p {
+            color: #c6c9d6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1a1f35;
+            margin-top: 30px;
+            color: #c6c9d6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mənim Saytım</h1>
+        <p>Şəxsi veb-saytıma xoş gəlmisiniz!</p>
+    </header>
+
+    <nav>
+        <a href="#ana">Ana səhifə</a>
+        <a href="#sekiller">Şəkillər</a>
+        <a href="#elaqe">Əlaqə</a>
+    </nav>
+
+    <section class="hero" id="ana">
+        <h2>Öz dünyanı kəşf et!</h2>
+        <p>Bu, mənim hazırladığım ilk saytdır.</p>
+        <a href="#sekiller" class="button">Şəkillərə bax</a>
+    </section>
+
+    <section id="sekiller">
+        <h2 style="text-align:center;">Şəkil qalereyası</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600"
+                    alt="Təbiət mənzərəsi">
+                <h3>Təbiət</h3>
+                <p>Gözəl təbiət mənzərəsi.</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600"
+                    alt="Gecə səması">
+                <h3>Gecə səması</h3>
+                <p>Ulduzlarla dolu səma.</p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600"
+                    alt="Dəniz">
+                <h3>Dəniz</h3>
+                <p>Sakit və gözəl dəniz.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="elaqe">
+        <p>© 2026 Mənim Saytım | Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
+```
